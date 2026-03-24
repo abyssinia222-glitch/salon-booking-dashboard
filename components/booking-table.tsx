@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import Table from './ui/table';
 import Button from './ui/button';
