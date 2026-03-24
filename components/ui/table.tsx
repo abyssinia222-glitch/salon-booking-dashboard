@@ -1,6 +1,7 @@
 import React from 'react';
 
 interface Booking {
+  id: number;
   client: string;
   time: string;
   service: string;
@@ -9,7 +10,7 @@ interface Booking {
 
 interface TableProps {
   bookings: Booking[];
-  onToggleStatus: (index: number) => void;
+  onToggleStatus: (id: number) => void;
 }
 
 const Table: React.FC<TableProps> = ({ bookings, onToggleStatus }) => {
@@ -26,8 +27,8 @@ const Table: React.FC<TableProps> = ({ bookings, onToggleStatus }) => {
           </tr>
         </thead>
         <tbody>
-          {bookings.map((booking, index) => (
-            <tr key={index} className="hover:bg-gray-100">
+          {bookings.map((booking) => (
+            <tr key={booking.id} className="hover:bg-gray-100">
               <td className="py-2 px-4 border-b">{booking.client}</td>
               <td className="py-2 px-4 border-b">{booking.time}</td>
               <td className="py-2 px-4 border-b">{booking.service}</td>
@@ -39,7 +40,7 @@ const Table: React.FC<TableProps> = ({ bookings, onToggleStatus }) => {
               <td className="py-2 px-4 border-b">
                 <button
                   className="text-blue-500 hover:underline"
-                  onClick={() => onToggleStatus(index)}
+                  onClick={() => onToggleStatus(booking.id)}
                 >
                   Toggle Status
                 </button>

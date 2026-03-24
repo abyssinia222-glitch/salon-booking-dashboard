@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import BookingTable from "@/components/booking-table";
 
 const DashboardPage = () => {
-  // your code
+  return <BookingTable />;
 };
 
 export default DashboardPage;
