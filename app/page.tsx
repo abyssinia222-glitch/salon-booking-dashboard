@@ -1,3 +1,4 @@
+"use client";
 import BookingTable from '../components/booking-table';
 
 const Page = () => {
