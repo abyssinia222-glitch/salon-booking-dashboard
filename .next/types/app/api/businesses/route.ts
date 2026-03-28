@@ -1,4 +1,4 @@
-// File: C:\Users\Yo\OneDrive\Desktop\salon-booking-dashboard\app\api\businesses\route.ts
+// File: /home/runner/work/salon-booking-dashboard/salon-booking-dashboard/app/api/businesses/route.ts
 import * as entry from '../../../../../app/api/businesses/route.js'
 import type { NextRequest } from 'next/server.js'
 

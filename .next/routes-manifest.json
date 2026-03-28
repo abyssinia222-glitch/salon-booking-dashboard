@@ -37,6 +37,12 @@
       "regex": "^/dashboard(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/dashboard(?:/)?$"
+    },
+    {
+      "page": "/slots",
+      "regex": "^/slots(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/slots(?:/)?$"
     }
   ],
   "dataRoutes": [],
