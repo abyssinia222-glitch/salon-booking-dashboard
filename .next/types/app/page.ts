@@ -1,4 +1,4 @@
-// File: C:\Users\Yo\OneDrive\Desktop\salon-booking-dashboard\app\page.tsx
+// File: /home/runner/work/salon-booking-dashboard/salon-booking-dashboard/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -11,6 +11,9 @@ This project is a Next.js 14 application designed for managing salon booking sta
   - Service
   - Status (with badges: green for confirmed, gray for pending)
 - Reception Confirmation button to toggle booking status.
+- Email delivery through Resend.
+- In-app business notifications backed by the database, with optional Supabase Realtime subscription support.
+- Public salon profile pages at `/salon/[businessId]`.
 
 ## Installation
 
@@ -31,12 +34,17 @@ To get started with the project, follow these steps:
    npm install
    ```
 
-4. Run the development server:
+4. Generate the Prisma client after schema changes:
+   ```
+   npx prisma generate
+   ```
+
+5. Run the development server:
    ```
    npm run dev
    ```
 
-5. Open your browser and go to `http://localhost:3000` to view the dashboard.
+6. Open your browser and go to `http://localhost:3000` to view the dashboard.
 
 ## Usage
 

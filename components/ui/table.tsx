@@ -33,13 +33,13 @@ const Table: React.FC<TableProps> = ({ bookings, onToggleStatus }) => {
               <td className="py-2 px-4 border-b">{booking.time}</td>
               <td className="py-2 px-4 border-b">{booking.service}</td>
               <td className="py-2 px-4 border-b">
-                <span className={`inline-block px-2 py-1 text-white rounded-full ${booking.status === 'confirmed' ? 'bg-green-500' : 'bg-gray-500'}`}>
+                <span className={`status-badge ${booking.status === 'confirmed' ? 'status-confirmed' : 'status-pending'}`}>
                   {booking.status}
                 </span>
               </td>
               <td className="py-2 px-4 border-b">
                 <button
-                  className="text-blue-500 hover:underline"
+                  className="btn-secondary px-3 py-1 text-sm"
                   onClick={() => onToggleStatus(booking.id)}
                 >
                   Toggle Status
